@@ -1,0 +1,89 @@
+
+@import 'header';
+@import 'footer';
+
+// Media Queries
+@media #{$small-and-down} {
+    #index-wrapper{
+        height: 90rem !important;
+
+        .app-stores {
+            img{
+                height: 3rem !important;
+                width: 27% !important;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .footer-links{
+        li{
+            display: block !important;
+        }
+    }
+}
+
+@media #{$medium-and-down} {
+    #index-wrapper{
+        height: 70rem !important;
+    }
+
+    .app-stores {
+        img{
+            height: 3rem !important;
+            width: 32% !important;
+        }
+    }
+}
+
+// Login/Signup Page
+#index-wrapper{
+    background: linear-gradient($left-to-right, rgba($insta-purple, $gradient-opacity), rgba($insta-red, $gradient-opacity)), url('../../login/img/nadine-shaabana-291361.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+    height: 65rem;
+
+    // Card Panels for both Signup & Login Forms
+    #signup-wrapper{
+        display: none;
+    }
+
+    .login-form.card-panel, .signup-form.card-panel{
+        padding: 2rem;
+        margin-top: 5rem;
+
+        h3{
+            font-family: 'Satisfy';
+            color: $insta-purple;
+        }
+
+        .center-line{
+            height: 1px;
+            border-bottom: 1px solid lighten(black, 70%);
+            margin-top: 1.8rem;
+        }
+        p {
+            font-size: 1rem;
+            @extend .grey-text;
+            svg{
+                @extend .light-blue-text, .text-darken-4;
+            }
+        }
+    }
+
+
+    // App Store Links Styling
+    .app-stores img{
+        &:hover{
+          filter: none;
+          cursor: pointer;
+        }
+        display: inline-block;
+        position: relative;
+        height: 2rem;
+        width: 32%;
+        margin: 0;
+        filter: grayscale(100%);
+     }
+}

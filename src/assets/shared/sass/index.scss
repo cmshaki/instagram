@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import 'materialize/materialize';
+@import 'my-colors';
+@import "../../login/sass/login.scss";
+@import "../../users/sass/users.scss";
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/roboto/Roboto-Bold.woff'),
+        url('../fonts/roboto/Roboto-Bold.woff2');
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src:
+        url('../fonts/roboto/Roboto-Regular.woff'),
+        url('../fonts/roboto/Roboto-Regular.woff2');
+}
+
+@font-face {
+    font-family: 'RobotoLight';
+    src:
+        url('../fonts/roboto/Roboto-Light.woff'),
+        url('../fonts/roboto/Roboto-Light.woff2');
+}
+
+@font-face {
+    font-family: 'RobotoLight';
+    src:
+        url('../fonts/roboto/Roboto-Light.woff'),
+        url('../fonts/roboto/Roboto-Light.woff2');
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Brands Regular';
+    src: url('../fonts/fontawesome/fa-brands-400.svg');
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Free Regular';
+    src: url('../fonts/fontawesome/fa-regular-400.svg');
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Free Solid';
+    src: url('../fonts/fontawesome/fa-solid-900.svg');
+}
+
+body {
+    font-family: 'RobotoRegular';
+}

@@ -1,0 +1,24 @@
+//Footer
+.page-footer{
+  background: $insta-purple;
+  .footer-links{
+    display: inline-block !important;
+    list-style: none !important;
+    li {
+      display: inline;
+      position: relative;
+      margin-left: 1rem;
+      a {
+        &:hover{
+          @extend .white-text;
+        }
+        display: inline;
+        color: rgba(white, .5);
+      }
+    }
+  }
+
+  .footer-copyright{
+    background: rgba(black, .5);
+  }
+}
